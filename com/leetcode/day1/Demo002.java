@@ -25,19 +25,19 @@ public class Demo002 {
 //    }
 
     // 第二种 7ms
-//    public static List<List<String>> groupAnagrams(String[] strs) {
-//        Map<String,List<String>> map =new HashMap<>();
-//        for (String str : strs) {
-//            char[] charArray = str.toCharArray();
-//            Arrays.sort(charArray);
-//            map.computeIfAbsent(new String(charArray),k->new ArrayList<>()).add(str);
-//
-//        }
-//        return new ArrayList<>(map.values());
-//    }
-    public List<List<String>> groupAnagrams(String[] strs) {
+    public static List<List<String>> groupAnagrams(String[] strs) {
+        Map<String,List<String>> map =new HashMap<>();
+        for (String str : strs) {
+            char[] charArray = str.toCharArray();
+            Arrays.sort(charArray);
+            map.computeIfAbsent(new String(charArray),k->new ArrayList<>()).add(str);
 
+        }
+        return new ArrayList<>(map.values());
     }
+//    public List<List<String>> groupAnagrams(String[] strs) {
+//
+//    }
 
 
     public static void main(String[] args) {
