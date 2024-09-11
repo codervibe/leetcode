@@ -3,7 +3,12 @@ package com.leetcode.day2;
 /**
  * Created by codervibe on 2024/9/10
  * DateTime:2024/09/10 下午9:33
- * Description:
+ * Description: 搜索插入位置
+ * 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+ *
+ * 请必须使用时间复杂度为 O(log n) 的算法。
+ *
+ *
  * Others:
  */
 
