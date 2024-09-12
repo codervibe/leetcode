@@ -31,14 +31,14 @@ public class Demo001 {
         }
 
         public TreeNode sortedArrayToBST(int[] nums) {
-            if (nums.length==0) {
+            if (nums.length == 0) {
                 return null;
             }
-            int mid = nums.length/2;
-            TreeNode treeNode =new TreeNode(nums[mid]);
-            treeNode.left = sortedArrayToBST(Arrays.copyOfRange(nums,0,mid));
-            treeNode.right = sortedArrayToBST(Arrays.copyOfRange(nums,mid+1,nums.length));
+            int mid = nums.length / 2;
+            TreeNode treeNode = new TreeNode(nums[mid]);
+            treeNode.left = sortedArrayToBST(Arrays.copyOfRange(nums, 0, mid));
+            treeNode.right = sortedArrayToBST(Arrays.copyOfRange(nums, mid + 1, nums.length));
             return treeNode;
         }
-
     }
+}
